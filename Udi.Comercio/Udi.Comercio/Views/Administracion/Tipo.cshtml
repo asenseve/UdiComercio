@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewBag.Title = "Tipo";
+}
+
+<h2>Tipos</h2>
+
+<div id="formAbmTipo" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-1 col-md-1  col-md-1">
+        </div>
+        <div class="col-lg-10 col-md-10 col-md-10">
+            <button id="btnAdicionarTipo" class="btn btn-outline-primary btn-sm
+                    rounded float-right" title="Adicionar">
+                <img src="~/Content/open-iconic/svg/plus.svg" alt="Adicionar">
+            </button>
+        </div>
+        <div class="col-lg-1 col-md-1  col-md-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1">
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-10">
+            <table id="tblAbmTipo" class="table table-hover table-bordered tabla-default">
+                <colgroup>
+                    <col style="width: 40%">
+                    <col style="width: 50%">
+                    <col style="width: 10%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th id="thAbmNombre">Nombre</th>
+                        <th id="thAbmDescripcion">Descripcion</th>
+                        <th id="thAbmEliminar"></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1">
+        </div>
+    </div>
+</div>
+<div class="modal fade modalPersonalizado" id="agregarAbmTipo" tabindex="-1"
+     role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="txtNombreTipo">Nombre</label>
+                        <input id="txtNombreTipo" class="form-control" maxlength="50" />
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="txtDescripcionTipo">Descripcion</label>
+                        <input id="txtDescripcionTipo" class="form-control" maxlength="200" />
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnAbmGuardarTipo">Guardar</button>
+                <button class="btn btn-primary" id="btnAbmEditarTipo">Guardar</button>
+                <a id="btnCancelarAbmTipo" class="btn btn-link" href="#"
+                   data-dismiss="modal">Cancelar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modalPersonalizado" id="eliminarTipo" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="text-mensaje-modal">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnConfirmarEliminarTipo">Aceptar</button>
+                <a id="btnCancelarEliminarTipo" class="btn btn-link" href="#" 
+                   data-dismiss="modal"> Cancelar </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/js/Tipo.js"></script>

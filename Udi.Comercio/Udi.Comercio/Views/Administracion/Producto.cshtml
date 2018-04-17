@@ -1,0 +1,146 @@
+﻿
+@{
+    ViewBag.Title = "Productos";
+}
+
+<h2>Productos</h2>
+
+<div id="formAbmProducto" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-1 col-md-1  col-md-1">
+        </div>
+        <div class="col-lg-10 col-md-10 col-md-10">
+            <button id="btnAdicionarProducto" class="btn btn-outline-primary btn-sm
+                    rounded float-right" title="Adicionar">
+                <img src="~/Content/open-iconic/svg/plus.svg" alt="Adicionar">
+            </button>
+        </div>
+        <div class="col-lg-1 col-md-1  col-md-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1">
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-10">
+            <table id="tblProductos" class="table table-hover table-bordered tabla-default">
+                <colgroup>
+                    <col style="width: 30%">
+                    <col style="width: 20%">
+                    <col style="width: 20%">
+                    <col style="width: 20%">
+                    <col style="width: 10%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th id="thAbmNombre">Nombre</th>
+                        <th id="thAbmPrecio">Precio</th>
+                        <th id="thAbmStock">Stock</th>
+                        <th id="thAbmTipo">Tipo</th>
+                        <th id="thAbmEliminar"></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1">
+        </div>
+    </div>
+</div>
+<div class="modal fade modalPersonalizado" id="agregarProducto" tabindex="-1"
+     role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="txtNombre">Nombre</label>
+                        <input id="txtNombre" class="form-control abmProducto" maxlength="50" />
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="txtDescripcion">Descripcion</label>
+                        <input id="txtDescripcion" class="form-control" maxlength="200" />
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="txtPrecio">Precio</label>
+                        <input id="txtPrecio" class="form-control abmProducto" maxlength="10" />
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="txtStock">Stock</label>
+                        <input id="txtStock" class="form-control abmProducto" maxlength="10" />
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="txtFechaVenc">Fecha Venc.</label>
+                        <input id="txtFechaVenc" class="form-control" maxlength="10" />
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="cmbTipo">Tipo</label>
+                        <select id="cmbTipo" class="form-control"></select>
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnGuardar">Guardar</button>
+                <button class="btn btn-primary" id="btnEditar">Guardar</button>
+                <a id="btnCancelar" class="btn btn-link" href="#"
+                   data-dismiss="modal">Cancelar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modalPersonalizado" id="eliminarProducto" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="text-mensaje-modal">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnConfirmarEliminar">Aceptar</button>
+                <a id="btnCancelarEliminar" class="btn btn-link" href="#"
+                   data-dismiss="modal">Cancelar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/js/Producto.js"></script>
