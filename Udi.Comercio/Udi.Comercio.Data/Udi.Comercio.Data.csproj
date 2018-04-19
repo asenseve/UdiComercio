@@ -58,6 +58,7 @@
     <Compile Include="Domain\Services\ComunServicio.cs" />
     <Compile Include="Domain\Services\ProductoServicio.cs" />
     <Compile Include="Domain\Services\TipoServicio.cs" />
+    <Compile Include="Domain\Uriel.cs" />
     <Compile Include="Infrastructure\Data\DataModels\DbContext.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
