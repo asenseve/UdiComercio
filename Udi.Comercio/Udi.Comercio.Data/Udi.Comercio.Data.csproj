@@ -83,6 +83,7 @@
     <Compile Include="Infrastructure\Data\Repositories\ProductoRepositorio.cs" />
     <Compile Include="Infrastructure\Data\Repositories\TipoRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Domain\Raiden.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
