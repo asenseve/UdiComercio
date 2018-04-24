@@ -52,9 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Domain\Alejandro.cs" />
     <Compile Include="Domain\Entities\AbmProductoDto.cs" />
     <Compile Include="Domain\Entities\ProductoDto.cs" />
     <Compile Include="Domain\Entities\TipoDto.cs" />
+    <Compile Include="Domain\JeanPierre.cs" />
+    <Compile Include="Domain\Marcelo.cs" />
     <Compile Include="Domain\Services\ComunServicio.cs" />
     <Compile Include="Domain\Services\ProductoServicio.cs" />
     <Compile Include="Domain\Services\TipoServicio.cs" />
