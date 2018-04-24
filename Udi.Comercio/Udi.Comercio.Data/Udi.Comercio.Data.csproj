@@ -56,9 +56,12 @@
     <Compile Include="Domain\Entities\AbmProductoDto.cs" />
     <Compile Include="Domain\Entities\ProductoDto.cs" />
     <Compile Include="Domain\Entities\TipoDto.cs" />
+    <Compile Include="Domain\JeanPierre.cs" />
+    <Compile Include="Domain\Marcelo.cs" />
     <Compile Include="Domain\Services\ComunServicio.cs" />
     <Compile Include="Domain\Services\ProductoServicio.cs" />
     <Compile Include="Domain\Services\TipoServicio.cs" />
+    <Compile Include="Domain\Uriel.cs" />
     <Compile Include="Infrastructure\Data\DataModels\DbContext.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
