@@ -19,5 +19,10 @@ namespace Udi.Comercio.Data.Domain
         {
             return msj = "ola que hace";
         }
+
+        public string Subliminal(string sb)
+        {
+            return sb = "ahorita no joven";
+        }
     }
 }
