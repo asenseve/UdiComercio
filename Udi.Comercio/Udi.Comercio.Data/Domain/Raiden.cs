@@ -16,5 +16,10 @@ namespace Udi.Comercio.Data.Domain
         {
             return "Raiden";
         }
+
+        public string GetApellidos()
+        {
+            return "Makio Tomori";
+        }
     }
 }
