@@ -23,7 +23,15 @@ namespace Udi.Comercio.Data.Domain
 
         private int resta(int a, int b)
         {
+            // devuelve negativos
             return a - b;
         }
+
+        private int restaAbsoluta(int a, int b)
+        {
+            int x = a - b;
+            return Math.Abs(x);
+        }
+
     }
 }
