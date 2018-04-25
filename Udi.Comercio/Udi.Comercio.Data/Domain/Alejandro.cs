@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿/* 
+    24-04-2018
+    Nombre : Alejandro Senseve
+    Fec.Nac : 08/12/1979
+    CI: 3896163 SC
+*/
 namespace Udi.Comercio.Data.Domain
 {
     class Alejandro
@@ -11,6 +11,11 @@ namespace Udi.Comercio.Data.Domain
         public Alejandro()
         {
              // Hola Mundo
+        }
+
+        int Suma(int a, int b)
+        {
+            return a + b;
         }
 
     }
