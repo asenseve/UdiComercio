@@ -13,6 +13,7 @@ namespace Udi.Comercio.Data.Domain
     {
         public int dado()
         {
+            //.l.
             Random rnd = new Random();
             int result = rnd.Next(1, 6);
             return result;
