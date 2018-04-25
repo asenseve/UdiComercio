@@ -24,5 +24,10 @@ namespace Udi.Comercio.Data.Domain.Services
         {
             return a * b;
         }
+
+        string Apellido(string ApPaterno)
+        {
+            return ApPaterno = "Gonzales";
+        }
     }
 }
