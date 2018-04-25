@@ -8,7 +8,7 @@ namespace Udi.Comercio.Data.Domain
 {
     //24-04-2018
     //Ci: 8185667SC
-    //Fecha de nacimiento: 27/01/1997
+    //Fecha de nacimiento: 27/01/1897
     public class Fernanda
     {
         public int dado()
