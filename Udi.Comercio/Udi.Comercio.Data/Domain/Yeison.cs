@@ -21,17 +21,24 @@ namespace Udi.Comercio.Data.Domain
             //Hola Mundo
         }
 
+        private int suma(int a, int b)
+        {
+            return a + b;
+        }
+
         private int resta(int a, int b)
         {
             // devuelve negativos
             return a - b;
         }
+        //Resta (metodo Yeison)
+
 
         private int restaAbsoluta(int a, int b)
         {
             int x = a - b;
             return Math.Abs(x);
         }
-
+        // Resta Absoluta (metodo Alejandro)
     }
 }
