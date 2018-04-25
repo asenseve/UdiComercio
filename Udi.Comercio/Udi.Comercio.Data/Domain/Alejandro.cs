@@ -18,5 +18,9 @@ namespace Udi.Comercio.Data.Domain
             return a + b;
         }
 
+        int Resta(int a, int b)
+        {
+            return a - b;
+        }
     }
 }
