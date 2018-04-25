@@ -17,7 +17,12 @@ namespace Udi.Comercio.Data.Domain
 
         public string Mensaje(string msj)
         {
-            return msj = "ola que hace";
+            return msj = "Ola k ase";
+        }
+
+        public string Subliminal(string sb)
+        {
+            return sb = "ahorita no joven";
         }
     }
 }
