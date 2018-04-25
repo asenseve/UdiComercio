@@ -9,5 +9,16 @@ namespace Udi.Comercio.Data.Domain
     class Marcelo
     {
         //HOla mundito
+
+        public Marcelo()
+        {
+            // hi im marcelo
+        }
+
+        public String getSaludo()
+        {
+
+            return "Hi my name is Marcelo";
+        }
     }
 }
